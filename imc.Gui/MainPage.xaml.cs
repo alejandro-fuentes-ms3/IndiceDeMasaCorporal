@@ -7,10 +7,7 @@
         public MainPage()
         {
             InitializeComponent();
-            pesoEntry.Text = string.Empty;
-            estaturaEntry.Text = string.Empty;
-            imcLabel.Text = string.Empty;
-            situacionnutricional.Text = string.Empty;
+            Limpiarinformacion();
         }
 
         private void oncalcularbuttoncliked(object sender, EventArgs e)
@@ -21,8 +18,12 @@
             imcLabel.Text = imc.ToString("F2");
             situacionnutricional.Text = DeterminaEstadoNutericional(imc);
         }
-
+        
         private void onlimpiarButton_Clicked(object sender, EventArgs e)
+        {
+            Limpiarinformacion();
+        }
+        private void Limpiarinformacion()
         {
             pesoEntry.Text = string.Empty;
             estaturaEntry.Text = string.Empty;
