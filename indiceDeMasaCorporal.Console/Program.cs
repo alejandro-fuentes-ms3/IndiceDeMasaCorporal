@@ -1,4 +1,5 @@
-﻿using System;
+﻿using imc.Model;
+using System;
 class Persona
 {
     // Atributos
@@ -11,6 +12,10 @@ class Persona
         Peso = peso;
         Estatura = estatura;
     }
+
+    
+    
+
 
     // Método para calcular el IMC del usuario
     public double CalcularIMC()
